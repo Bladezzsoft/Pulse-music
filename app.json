@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "PULSE",
+    "slug": "pulse-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#09090D"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppleMusicUsageDescription": "PULSE can access audio files you choose to add to your library."
+      }
+    },
+    "android": {
+      "permissions": [
+        "READ_MEDIA_AUDIO"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#09090D"
+      },
+      "package": "com.pulse.musicplayer",
+      "versionCode": 1
+    },
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ]
+    ],
+    "description": "PULSE — музыкальная библиотека и аудиоплеер.",
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+      }
+    }
+  }
+}
