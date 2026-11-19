@@ -71,8 +71,8 @@ export default function App() {
   const [catalogError, setCatalogError] = useState('');
 
   const expandAnim = useRef(new Animated.Value(0)).current;
-  const current = allTracks.find(t => t.id === currentId) || null;
   const allTracks = useMemo(() => [...tracks, ...popularTracks, ...catalogTracks], [tracks, popularTracks, catalogTracks]);
+  const current = allTracks.find(t => t.id === currentId) || null;
 
   useEffect(() => {
     let active = true;
